@@ -1,4 +1,5 @@
 // Menu mobile
+
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 
@@ -9,6 +10,7 @@ if(burger) {
 }
 
 // Scroll para os links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -65,3 +67,4 @@ document.addEventListener('keydown', function(event) {
     }
 
 });
+
