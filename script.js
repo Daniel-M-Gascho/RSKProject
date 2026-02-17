@@ -1,4 +1,4 @@
-// Menu mobile básico
+// Menu mobile
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 
@@ -8,7 +8,7 @@ if(burger) {
     });
 }
 
-// Scroll Suave para os links
+// Scroll para os links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -34,7 +34,7 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop;
 });
 
-// --- FUNÇÕES DO LIGHTBOX RSK PROJETOS ---
+// LighBox
 
 function openLightbox(src) {
     const lightbox = document.getElementById('custom-lightbox');
@@ -57,9 +57,11 @@ function closeLightbox() {
     }
 }
 
-// Fechar automaticamente ao apertar a tecla ESC
+// Fechar ao apertar ESC
+
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape") {
         closeLightbox();
     }
+
 });
